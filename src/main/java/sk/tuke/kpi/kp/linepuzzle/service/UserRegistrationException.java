@@ -1,0 +1,12 @@
+package sk.tuke.kpi.kp.linepuzzle.service;
+
+public class UserRegistrationException extends  RuntimeException{
+    public UserRegistrationException(String message) {
+        super(message);
+    }
+
+    public UserRegistrationException(String message, Throwable cause) {
+        super(message, cause);
+    }
+
+}

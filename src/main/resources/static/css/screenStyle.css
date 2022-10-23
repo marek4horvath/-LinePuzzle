@@ -1,0 +1,291 @@
+@import url('https://fonts.googleapis.com/css?family=Poppins:400,500,600,700&display=swap');
+
+body {
+    /* background-color: #B3ABD57D !important;*/
+
+    background-image: url("  https://img.freepik.com/free-vector/hexagonal-technology-pattern-mesh-background-with-text-space_1017-26293.jpg?size=626&ext=jpg");
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    position: relative;
+}
+
+a:link {
+    text-decoration: none;
+}
+
+hr {
+    margin: 0 !important;
+    color: red !important;
+    background-color: currentColor !important;
+    border: inset !important;
+    opacity: inherit !important;
+}
+
+.popup {
+    border: 3px solid #032a5b;
+    height: 360px;
+    padding: 50px;
+    background-color: #0d6efd;
+}
+
+.close {
+    float: right;
+    margin-right: -30px;
+    margin-top: -45px;
+    cursor: pointer;
+    color: red;
+    font-size: 39px;
+    width: 50px;
+    height: 50px;
+}
+
+.header {
+    text-align: center;
+    padding: 10px;
+    margin-bottom: 20px;
+}
+
+.play {
+    width: 500px;
+    height: 200px;
+    margin: auto;
+    margin-top: auto;
+    display: block;
+    margin-top: 100px;
+}
+
+.comment {
+    margin: 10px;
+    color: white;
+}
+
+.playerBoard {
+    margin: auto;
+    width: 50%;
+    padding: 10px;
+    background-image: url("https://cdn.videvo.net/videvo_files/video/free/2013-10/thumbnails/Background_08_small.jpg");
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    position: relative;
+    border-radius: 12px;
+}
+
+.p-3 {
+    background-color: rgb(1, 10, 37);
+    margin-top: 290px;
+    color: white;
+}
+
+.btn-primary {
+    background: rgb(2, 0, 36) !important;
+    background: linear-gradient(18deg, rgb(2, 0, 36) 15%, rgb(9, 9, 121) 49%, rgb(26, 48, 95) 100%) !important;
+}
+
+/*.checked {
+    color: orange;
+}*/
+
+.rating {
+    position: relative;
+    width: 50%;
+    background: #111;
+    padding: 20px 30px;
+    border: 1px solid #444;
+    border-radius: 5px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    margin: auto;
+    margin-bottom: 10px;
+}
+
+.rating .post {
+    display: none;
+}
+
+.rating .text {
+    font-size: 25px;
+    color: #666;
+    font-weight: 500;
+}
+
+.rating .edit {
+    position: absolute;
+    right: 10px;
+    top: 5px;
+    font-size: 16px;
+    color: #666;
+    font-weight: 500;
+    cursor: pointer;
+}
+
+.rating .edit:hover {
+    text-decoration: underline;
+}
+
+.rating .star-widget input {
+    display: none;
+}
+
+.star-widget label {
+    font-size: 40px;
+    color: #444;
+    padding: 10px;
+    float: right;
+    transition: all 0.2s ease;
+}
+
+input:not(:checked) ~ label:hover,
+input:not(:checked) ~ label:hover ~ label {
+    color: #fd4;
+}
+
+input:checked ~ label {
+    color: #fd4;
+}
+
+input#rate-5:checked ~ label {
+    color: #fe7;
+    text-shadow: 0 0 20px #952;
+}
+
+#rate-1:checked ~ form header:before {
+    content: "I just hate it 😠";
+}
+
+#rate-2:checked ~ form header:before {
+    content: "I don't like it 😒";
+}
+
+#rate-3:checked ~ form header:before {
+    content: "It is awesome 😄";
+}
+
+#rate-4:checked ~ form header:before {
+    content: "I just like it 😎";
+}
+
+#rate-5:checked ~ form header:before {
+    content: "I just love it 😍";
+}
+
+.rating form {
+    display: none;
+}
+
+input:checked ~ form {
+    display: block;
+}
+
+form header {
+    width: 100%;
+    font-size: 25px;
+    color: #fe7;
+    font-weight: 500;
+    margin: 5px 0 20px 0;
+    text-align: center;
+    transition: all 0.2s ease;
+}
+
+form .textarea {
+    height: 100px;
+    width: 100%;
+    overflow: hidden;
+}
+
+form .textarea textarea {
+    height: 100%;
+    width: 100%;
+    outline: none;
+    color: #eee;
+    border: 1px solid #333;
+    background: #222;
+    padding: 10px;
+    font-size: 17px;
+    resize: none;
+}
+
+.textarea textarea:focus {
+    border-color: #444;
+}
+
+form .btn {
+    height: 45px;
+    width: 100%;
+    margin: 15px 0;
+}
+
+form .btn button {
+    height: 100%;
+    width: 100%;
+    border: 1px solid #444;
+    outline: none;
+    background: #222;
+    color: #999;
+    font-size: 17px;
+    font-weight: 500;
+    text-transform: uppercase;
+    cursor: pointer;
+    transition: all 0.3s ease;
+}
+
+form .btn button:hover {
+    background: #1b1b1b;
+}
+
+label {
+    color: white;
+}
+
+h1 {
+    text-align: center;
+    color: white;
+    font-family: "Times New Roman", Times, serif;
+}
+
+.level {
+    color: white;
+    text-align: center;
+    font-size: 24px;
+}
+
+.name {
+    color: white;
+    font-size: 16px;
+}
+
+.title {
+    position: absolute;
+    top: 175px;
+    right: 321px;
+    color: white;
+}
+
+.succReg {
+    text-align: center;
+    background: green;
+    padding: 10px;
+    margin-top: 15px;
+}
+
+.errComm {
+    text-align: center;
+    background: red;
+    padding: 10px;
+    margin-top: 15px;
+    color: white;
+}
+
+a:hover {
+    color: #6f2032 !important;
+}
+
+.win {
+    margin: auto;
+    text-align: center;
+    color: red;
+    font-family: initial;
+}
